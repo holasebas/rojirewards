@@ -1,5 +1,8 @@
 
 import { StyleSheet } from 'react-native'
+import { colors } from './colors';
+import {color} from './properties/color'
+// import { color } from './properties/color';
 
 export const st = StyleSheet.create({
 
@@ -20,7 +23,8 @@ export const st = StyleSheet.create({
     },
     border_1:{
         borderWidth:1,
-        borderColor:"#777"
+        borderColor:"#777",
+        
     },
 
     f_12: {
@@ -139,6 +143,15 @@ export const st = StyleSheet.create({
     mx_15:{
         marginHorizontal:15
     },
+    p_5:{
+        padding:5
+    },
+    p_10:{
+        padding:10
+    },
+    p_15:{
+        padding:15
+    },
     ps_5:{
         paddingLeft:5
     },
@@ -206,6 +219,9 @@ export const st = StyleSheet.create({
     pb_15:{
         paddingBottom:15
     },
+    r_100:{
+        borderRadius:'100%'
+    },
     r_5:{
         borderRadius:5
     },
@@ -224,6 +240,24 @@ export const st = StyleSheet.create({
     r_30:{
         borderRadius:30
     },
+
+    rt_5:{
+        borderTopLeftRadius:5,
+        borderTopRightRadius:5
+    },
+    rt_10:{
+        borderTopLeftRadius:10,
+        borderTopRightRadius:10
+    },
+    rt_15:{
+        borderTopLeftRadius:15,
+        borderTopRightRadius:15
+    },
+    rt_20:{
+        borderTopLeftRadius:20,
+        borderTopRightRadius:20
+    },
+    
     bg_white:{
         backgroundColor:'white'
     },
@@ -237,25 +271,30 @@ export const st = StyleSheet.create({
         bottom:0
     },
     card:{
-   
-       
         
-        borderRadius:15,
-        backgroundColor:'white',
-        shadowColor: "#888",
-        shadowOffset: {
-          width: 0,
-          height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-    
-        elevation: 5,
+        backgroundColor: 'white',
+        borderRadius: 5,
+      
+        marginVertical: 10,
+        shadowColor: '#000',
+        shadowOffset: {width: -2, height: 4},
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
       
       },
       underline:{
         textDecorationLine:'underline'
-      }
+      },
+      bg_yellow:{
+        backgroundColor:colors.yellow
+      },
+      ...color
+  
+   
+      
+      
+      
+
   
     
     
