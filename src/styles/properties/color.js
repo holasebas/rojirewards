@@ -8,6 +8,15 @@ export const color = StyleSheet.create({
     bg_yellow:{
         backgroundColor:colors.yellow
     },
+    bg_black:{
+        backgroundColor:colors.black
+    },
+    bg_dark:{
+        backgroundColor:colors.dark
+    },
+    bg_red:{
+        backgroundColor:colors.red
+    },
     text_white:{
         color:colors.white
     },
@@ -16,6 +25,12 @@ export const color = StyleSheet.create({
     },
     text_blue:{
         color:colors.blue
+    },
+    text_red:{
+        color:colors.red
+    },
+    text_orange:{
+        color:colors.orange
     },
     border_white:{
         borderWidth:1,
@@ -28,6 +43,10 @@ export const color = StyleSheet.create({
     border_blue:{
         borderWidth:1,
         borderColor:colors.blue
+    },
+    border_red:{
+        borderWidth:1,
+        borderColor:colors.red
     }
     
 })

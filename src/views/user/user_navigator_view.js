@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons,MaterialIcons,FontAwesome5 } from '@expo/vector-icons'; 
 import UserHomeView from './user_home_view';
+import { st } from '../../styles/utils';
+import { colors } from '../../styles/colors';
 
 function HomeScreen() {
   return (
@@ -52,8 +54,12 @@ const Tab = createBottomTabNavigator();
 export default function UserNavigatorView() {
   return (
   
-      <Tab.Navigator  screenOptions={({ route }) => ({
+      <Tab.Navigator  screenOptions={
+        
+        ({ route }) => ({
+        tabBarStyle:{backgroundColor:"#000"},
         headerShown:false,
+        
         tabBarIcon: ({ focused, color, size }) => {
             
 
@@ -84,6 +90,7 @@ export default function UserNavigatorView() {
         },
         tabBarActiveTintColor: '#E2076A',
         tabBarInactiveTintColor: '#CCC',
+       
       })}>
         <Tab.Screen name="user_home_view" options={{ tabBarLabel:'Inicio' }} component={UserHomeView} />
         <Tab.Screen name="user_roji_view" options={{ tabBarLabel:'Roji' }}  component={SettingsScreen} />

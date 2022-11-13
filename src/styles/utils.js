@@ -18,9 +18,6 @@ export const st = StyleSheet.create({
         borderTopWidth:1,
         borderColor:'#DDD'
     },
-    bg_red:{
-        backgroundColor:'red'
-    },
     border_1:{
         borderWidth:1,
         borderColor:"#777",
@@ -193,7 +190,7 @@ export const st = StyleSheet.create({
         paddingRight:5
     },
     pe_10:{
-        paddingHpaddingRightorizontal:10
+        paddingRight:10
     },
     pe_15:{
         paddingRight:15
@@ -271,15 +268,13 @@ export const st = StyleSheet.create({
         bottom:0
     },
     card:{
-        
-        backgroundColor: 'white',
-        borderRadius: 5,
-      
+    
+        borderRadius: 15,
         marginVertical: 10,
         shadowColor: '#000',
-        shadowOffset: {width: -2, height: 4},
-        shadowOpacity: 0.2,
-        shadowRadius: 3,
+        shadowOffset: {width: -3, height: 3},
+        shadowOpacity: 1,
+        shadowRadius: 5,
       
       },
       underline:{
